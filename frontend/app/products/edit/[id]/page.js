@@ -15,7 +15,6 @@ export default function EditProductPage() {
     name: "",
     price: "",
     category: "",
-    description: "",
   });
 
   useEffect(() => {
@@ -26,7 +25,6 @@ export default function EditProductPage() {
           name: res.data.name || "",
           price: res.data.price || "",
           category: res.data.category || "",
-          description: res.data.description || "",
         });
       } catch (err) {
         toast.error("Failed to load product");
